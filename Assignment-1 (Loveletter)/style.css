@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box; /* box-sizing:  The width and height you set will now include the content, padding, and border, but not the margin.*/
+  margin: 0; /* reset the margin and padding to zero */
+  padding: 0;
+}
+
+.header-container {
+  background-color: aliceblue;
+  border: 1px solid black;
+  display: flex;
+  padding: 30px 15px;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.logo-header {
+  margin-right: auto;
+}
+
+.sidebar {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.sidebar-left,
+.sidebar-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  /* padding: 20px; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sidebar-mid {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid red;
+}
+
+.box-mid {
+  border: 1px solid grey;
+  flex-grow: 1;
+}
+
+#content2 {
+  border: 1px solid green;
+  display: flex;
+  align-items: stretch;
+}
+
+#box-mid-1 {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-mid-2 {
+  flex: 5;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content1 {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+#box-mid-1-1,
+#box-mid-2-1 {
+  border: 1px solid purple;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+}
+
+#box-mid-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

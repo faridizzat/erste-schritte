@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box; /* box-sizing:  The width and height you set will now include the content, padding, and border, but not the margin.*/
+        margin: 0; /* reset the margin and padding to zero */
+        padding: 0;
+      }
+
+      .header-container {
+        text-align: center;
+        margin: 0 0 30px 0; /* gap between h1 bottom */
+        font-family: "Dancing Script", cursive;
+      }
+      .center-box {
+        background-color: aliceblue;
+        min-height: 800px; /* Set a minimum height for the container */
+        width: 500px;
+        margin: 50px auto; /* Set horizontal margins to auto */
+        padding: 15px; /* Distance from h1 to border of top center-box */
+        border: 2px solid black;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 5px;
+        text-align: justify;
+      }
+
+      #poem {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .closing {
+        font-weight: bold;
+      }
+      .Signature {
+        height: 50px; /*how to adjust the img position using class=closing as sort of anchor? */
+        margin: 0;
+      }
+
+      .heart,
+      .cat {
+        height: 100%; /* Make the image fill the entire width of the div */
+        width: 100%; /* Make the image fill the entire height of the div */
+        object-fit: cover; /* Maintain aspect ratio and cover the entire div */
+      }
+
+      .side2side-container {
+        display: flex; /* display: flex to make the div side by side */
+        margin-bottom: 15px;
+      }
+
+      .side-content-left {
+        flex: 1; /* flex: 1 so that the div same size as the other child divs in parent div  */
+        padding-right: 10px; /* add padding to create space between the divs */
+      }
+
+      .side-content-left-cat {
+        flex: 0.5; /* flex: 1 so that the div same size as the other child divs in parent div  */
+        padding-right: 10px; /* add padding to create space between the divs */
+      }
+
+      .side-content-right {
+        flex: 1;
+        padding-left: 10px; /* add padding to create space between the divs */
+        height: 100%;
+      }
+
+      body {
+        background-color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-box">
+      <div class="header-container">
+        <h1>Love Letter</h1>
+      </div>
+
+      <div class="main-container">
+        <p class="content">
+          Dear my cat,<br /><br />Lorem ipsum dolor sit amet, consectetur
+          <strong>adipisicing</strong> elit. Iure doloremque ab rerum dolores
+          beatae quam modi mollitia molestiae laboriosam veniam pariatur
+          accusamus harum commodi libero odio molestias facilis similique
+          corrupti, nobis enim explicabo ea id ex. Veritatis quasi nulla
+          blanditiis.
+        </p>
+        <br />
+
+        <div class="side2side-container">
+          <div class="side-content-left-cat">
+            <img
+              src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="..."
+              class="cat"
+            />
+          </div>
+
+          <div class="side-content-right">
+            <p class="content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+              <i>architecto</i> aliquam earum deserunt eos! Laudantium illo ea,
+              quo perspiciatis natus quaerat illum saepe sunt impedit ad autem
+              asperiores adipisci ullam consectetur molestiae aspernatur vero
+              dignissimos ut deserunt praesentium recusandae id fuga! Libero
+              voluptate veniam rem fugiat possimus asperiores ex explicabo.
+            </p>
+            <br />
+          </div>
+        </div>
+
+        <p class="content" style="color: blueviolet">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis id
+          fugiat <u>doloribus</u> inventore. Aspernatur, excepturi!
+        </p>
+        <br />
+      </div>
+
+      <div class="side2side-container">
+        <div class="side-content-left">
+          <p class="content" id="poem">
+            <i>Lorem ipsum dolor sit amet.</i> <br />
+            <i>Lorem ipsum dolor sit amet.</i> <br />
+            <i>Lorem ipsum dolor sit amet.</i> <br />
+            <i>Lorem ipsum dolor sit amet.</i>
+          </p>
+        </div>
+
+        <div class="side-content-right">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1670856377657-163942a0352a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="..."
+            class="heart"
+          />
+        </div>
+      </div>
+
+      <div class="bottom-container">
+        <p class="closing">
+          Regards,<br />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/df/Pavel_Demidov_Signature.svg"
+            alt="..."
+            class="Signature"
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
