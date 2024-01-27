@@ -18,21 +18,36 @@ body {
 
 .logo {
   margin-right: 100px;
-  margin-left: 0;
-  border: 1px solid red;
+  margin-left: 2%;
 }
 
 .list {
-  border: 1px solid red;
+  color: var(--White-Medium-emphasis, rgba(255, 255, 255, 0.6));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.024px;
 }
 
-.icon {
-  border: 1px solid red;
+#yellow-book {
+  color: var(--Yellow-400, #f4d867);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.024px;
 }
 
 .login {
-  border: 1px solid red;
-  margin-right: 0;
+  margin-right: 2%;
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: var(--Yellow-500, #f4ce47);
 }
 
 .banner {
@@ -43,6 +58,23 @@ body {
   padding: 0 1%;
   align-items: center;
   background: var(--Yellow-500, #f4ce47);
+  color: var(--Yellow-700, #f4ba30);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px; /* 116.667% */
+  text-transform: uppercase;
+}
+
+#center-book {
+  color: var(--Black-bg, #2a2c2e);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px; /* 116.667% */
+  text-transform: uppercase;
 }
 
 .main {
@@ -73,7 +105,6 @@ body {
 }
 
 .footer {
-  border: 1px solid red;
   min-height: 8px;
   width: 80%;
   margin: 0 10%;
@@ -84,7 +115,6 @@ body {
 }
 
 .footer-logo {
-  border: 1px solid black;
   flex: 1;
   padding: 1%;
   display: flex;
@@ -92,7 +122,6 @@ body {
 }
 
 .footer-icon {
-  border: 1px solid black;
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -103,10 +132,9 @@ body {
 }
 
 .footer-bottom {
-  border: 1px solid blue;
   width: 80%;
   margin: 0 10% 1% 10%;
-  min-height: 10px;
+  min-height: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -114,19 +142,31 @@ body {
 }
 
 .footer-term {
-  border: 1px solid black;
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 2%;
+  color: var(--White-High-emphasis, #fff);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.018px;
 }
 
 .footer-contact {
-  border: 1px solid black;
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   gap: 2%;
+  color: var(--White-High-emphasis, #fff);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.018px;
 }
