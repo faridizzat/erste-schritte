@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin: 1% 10%;
   border-radius: 20px;
   opacity: 0.96;
@@ -19,6 +20,7 @@ body {
 .logo {
   margin-right: 100px;
   margin-left: 2%;
+  flex-shrink: 1;
 }
 
 .list {
@@ -30,6 +32,7 @@ body {
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.024px;
+  flex-shrink: 1;
 }
 
 #yellow-book {
@@ -45,9 +48,14 @@ body {
 
 .login {
   margin-right: 2%;
-  padding: 16px 20px;
+  padding: 16px 50px;
   border-radius: 16px;
   background: var(--Yellow-500, #f4ce47);
+  flex-shrink: 1;
+}
+
+.icon {
+  flex-shrink: 1;
 }
 
 .banner {
@@ -67,6 +75,10 @@ body {
   text-transform: uppercase;
 }
 
+.all-books {
+  flex-shrink: 1;
+}
+
 #center-book {
   color: var(--Black-bg, #2a2c2e);
   font-family: Inter;
@@ -78,7 +90,6 @@ body {
 }
 
 .main {
-  border: 1px solid blue;
   margin-top: 1%;
   margin-bottom: 1%;
   min-height: 200px;
