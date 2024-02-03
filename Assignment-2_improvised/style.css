@@ -119,14 +119,18 @@ main {
   padding: 16px 0;
 }
 
+main {
+  display: flex;
+}
 main > .container {
   width: 898px;
   margin: 0 auto;
+  flex-shrink: 1;
 
   /* flex   */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   /* flex additional props */
   gap: 8px;
@@ -267,4 +271,56 @@ main > .container {
 #discount {
   color: #000000;
   opacity: 87%;
+}
+
+.footer-top {
+  width: 1248px;
+  height: 88px;
+  margin: 0 auto;
+
+  /* padding */
+  padding: 0 24px;
+  background-color: #2a2c2e;
+
+  /* flex   */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom {
+  width: 1248px;
+  height: 40px;
+  margin: 0 auto;
+
+  /* padding */
+  padding: 12px 24px;
+  background-color: #000000;
+  opacity: 87%;
+
+  /* flex   */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom > div {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.15%;
+  text-align: left;
+  vertical-align: top;
+  color: #ffffff;
+  opacity: 100%;
+}
+
+#left,
+#right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
