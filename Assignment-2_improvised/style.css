@@ -20,10 +20,13 @@ body {
   /* padding top bottom */
   padding: 10px 0;
 }
-
+header {
+  /* flex */
+  display: flex;
+}
 header > .container {
   width: 1200px;
-  height: 96px;
+  min-height: 96px;
   background-color: #2a2c2e;
 
   /*set margin to center*/
@@ -40,6 +43,7 @@ header > .container {
 
   /* flex-additional */
   gap: 16px; /*safe gap*/
+  flex-shrink: 1;
 }
 
 nav {
@@ -86,7 +90,7 @@ button {
 }
 
 .banner {
-  height: 80px;
+  min-height: 80px;
   background-color: #f4ce47;
 
   /* flex   */
@@ -99,6 +103,8 @@ button {
 
   /* padding */
   padding: 12px;
+
+  overflow: hidden;
 }
 
 .banner > a {
@@ -323,4 +329,15 @@ main > .container {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+}
+
+/* responsiveness */
+
+@media (max-width: 900px) {
+  header > .container {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
