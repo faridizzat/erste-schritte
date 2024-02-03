@@ -18,4 +18,26 @@ header > .container {
 
   /*set margin to center*/
   margin: 0 auto;
+
+  /* flex  */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* flex-additional */
+  gap: 16px; /*safe gap*/
+}
+
+nav {
+  color: #ffffff;
+
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* flex-additional props */
+  gap: 16px;
 }
