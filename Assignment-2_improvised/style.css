@@ -19,6 +19,9 @@ header > .container {
   /*set margin to center*/
   margin: 0 auto;
 
+  /* set padding */
+  padding: 10px;
+
   /* flex  */
   display: flex;
   flex-direction: row;
@@ -49,4 +52,25 @@ button {
   padding: 16px, 28px, 16px, 28px;
   background-color: #f4ce47;
   cursor: pointer;
+}
+
+.right {
+  /* flex   */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* flex additional props */
+  gap: 24px;
+}
+
+.icon {
+  /* flex   */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* flex additional props */
+  gap: 16px;
 }
