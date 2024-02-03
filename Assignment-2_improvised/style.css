@@ -59,6 +59,11 @@ nav {
   gap: 24px;
 }
 
+div [data-active="true"] {
+  color: #f4d867;
+  opacity: 100%;
+}
+
 button {
   width: 100px;
   height: 55px;
@@ -91,33 +96,39 @@ button {
 
 .banner {
   min-height: 80px;
-  width: 100%;
   background-color: #f4ce47;
 
+  /* flex   */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-shrink: 1;
+}
+.banner > .container {
   /* flex   */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* flex additional props */
   gap: 24px;
   flex-shrink: 1;
-
-  /* padding */
-  padding: 12px;
+  overflow: hidden;
 }
 
-.banner > a {
-  all: unset;
-  font-size: 48px;
-  line-height: 56px;
-  cursor: pointer;
+.banner > .container > .text {
   color: #f4ba30;
+  opacity: 100%;
+
+  /* font */
+  font-size: 48px;
+
   flex-shrink: 1;
 }
 
-.banner > a:hover {
+.banner > .container > div[data-active="true"] {
   color: #2a2c2e;
+  opacity: 100%;
 }
 
 main {
