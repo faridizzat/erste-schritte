@@ -1,0 +1,5 @@
+* {
+  box-sizing: border-box; /* box-sizing:  The width and height you set will now include the content, padding, and border, but not the margin.*/
+  margin: 0; /* reset the margin and padding to zero */
+  padding: 0;
+}
