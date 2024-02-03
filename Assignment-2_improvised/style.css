@@ -28,6 +28,7 @@ header > .container {
   width: 1200px;
   min-height: 96px;
   background-color: #2a2c2e;
+  border-radius: 20px;
 
   /*set margin to center*/
   margin: 0 auto;
