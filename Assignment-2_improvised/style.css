@@ -39,5 +39,14 @@ nav {
   align-items: center;
 
   /* flex-additional props */
-  gap: 16px;
+  gap: 24px;
+}
+
+button {
+  width: 100px;
+  height: 55px;
+  border-radius: 16px;
+  padding: 16px, 28px, 16px, 28px;
+  background-color: #f4ce47;
+  cursor: pointer;
 }
