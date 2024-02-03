@@ -3,3 +3,19 @@
   margin: 0; /* reset the margin and padding to zero */
   padding: 0;
 }
+
+body {
+  background-color: #f6f4f0;
+
+  /* gap between header,nav,main,footer */
+  gap: 16px;
+}
+
+header > .container {
+  width: 1200px;
+  height: 96px;
+  background-color: #2a2c2e;
+
+  /*set margin to center*/
+  margin: 0 auto;
+}
