@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box; /* box-sizing:  The width and height you set will now include the content, padding, and border, but not the margin.*/
+  margin: 0; /* reset the margin and padding to zero */
+  padding: 0;
+}
+
+body {
+  border: 1px solid blue;
+  background-color: #f6f4f0;
+  font-family: "Inter", sans-serif;
+
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+  /* gap between header,banner,main,footer */
+  gap: 16px;
+
+  /* padding top bottom */
+  padding: 10px 0;
+}
+
+header {
+  /* flex */
+  display: flex;
+}
+
+header > .container {
+  width: 1200px;
+  min-height: 96px;
+  background-color: #2a2c2e;
+  border-radius: 20px;
+
+  /*set margin to center*/
+  margin: 0 auto;
+
+  /* set padding */
+  padding: 10px;
+
+  /* flex  */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* flex-additional */
+  gap: 16px; /*safe gap*/
+  flex-shrink: 1;
+}
+
+/* FOOTER */
+footer {
+  min-height: 88px;
+
+  /* flex   */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-shrink: 1;
+}
+
+.footer-top {
+  height: 88px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2c2e;
+}
+
+.footer-bottom {
+  height: 40px;
+  padding: 0 24px;
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  opacity: 87%;
+}
+
+#left,
+#right {
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  /* font */
+  font-size: 12px;
+  letter-spacing: 0.15%;
+  line-height: 16px;
+  text-align: left;
+  vertical-align: top;
+  color: #ffffff;
+  opacity: 100%;
+}
+
+/* MAIN */
+main {
+  border-radius: 20px;
+  display: flex;
+}
+
+main > .container {
+  width: 1200px;
+  min-height: 1000px;
+  background-color: #2a2c2e;
+  border-radius: 20px;
+
+  /*set margin to center*/
+  margin: 0 auto;
+
+  /* set padding */
+  padding: 24px;
+
+  /* flex  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+  /* flex-additional */
+  gap: 16px; /*safe gap*/
+  flex-shrink: 1;
+}
+
+#subheader {
+  /* font-styling */
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  vertical-align: middle;
+  color: #ffffff;
+  opacity: 100%;
+}
+
+#form-container {
+  width: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+  gap: 20px;
+}
+
+.sub-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+
+  /* font */
+  color: #ffffff;
+}
+
+.line {
+  border: 1px solid #ffffff;
+  flex-grow: 1;
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  width: 150px; /* 150px due to radio-label*/
+  height: 24px;
+  /* font-styling */
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15%;
+  text-align: left;
+  vertical-align: middle;
+  color: #ffffff;
+  opacity: 100%;
+}
+
+input {
+  width: 572px;
+  height: 56px;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+::placeholder {
+  /* font-styling */
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15%;
+  text-align: left;
+  vertical-align: middle;
+  color: #000000;
+  opacity: 60%;
+}
+
+/* RADIO */
+#radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 16px;
+}
+
+form > p {
+  color: #ffffff;
+  opacity: 100%;
+}
+
+input[type="radio"] {
+  width: 20px;
+}
+
+#radio > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  gap: 8px;
+}
+
+/* checkbox */
+
+#checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 16px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+}
+
+label[for="agree"] {
+  width: fit-content;
+}
+
+button {
+  height: 56px;
+  padding: 16px 28px;
+  border-radius: 16px;
+  background-color: #f4ce47;
+  opacity: 100%;
+
+  /* font-styling */
+  font-size: 16px;
+  font-weight: medium;
+  line-height: 24px;
+  letter-spacing: 0.15%;
+  text-align: center;
+  vertical-align: center;
+  color: #000000;
+  opacity: 87%;
+}
