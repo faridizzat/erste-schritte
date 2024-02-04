@@ -143,7 +143,9 @@ main > .container {
 }
 
 #form-container {
-  width: 711px;
+  /* width=100%; max-width=width before it resize for responsiveness */
+  width: 100%;
+  max-width: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -178,7 +180,9 @@ form {
 }
 
 label {
-  width: 150px; /* 150px due to radio-label*/
+  /* width=100%; max-width=width before it resize for responsiveness */
+  width: 100%;
+  max-width: 150px; /* 150px due to radio-label*/
   height: 24px;
   /* font-styling */
   font-size: 16px;
@@ -191,7 +195,9 @@ label {
 }
 
 input {
-  width: 572px;
+  /* width=100%; max-width=width before it resize for responsiveness */
+  width: 100%;
+  max-width: 572px;
   height: 56px;
   border-radius: 16px;
   padding: 10px;
@@ -253,7 +259,9 @@ input[type="checkbox"] {
 }
 
 label[for="agree"] {
-  width: fit-content;
+  /* width=100%; max-width=width before it resize for responsiveness */
+  width: 100%;
+  max-width: 572px;
 }
 
 button {
@@ -262,6 +270,7 @@ button {
   border-radius: 16px;
   background-color: #f4ce47;
   opacity: 100%;
+  cursor: pointer;
 
   /* font-styling */
   font-size: 16px;
@@ -272,4 +281,10 @@ button {
   vertical-align: center;
   color: #000000;
   opacity: 87%;
+}
+
+@media (max-width: 900px) {
+  .footer-bottom {
+    flex-direction: column;
+  }
 }
