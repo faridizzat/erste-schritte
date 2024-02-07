@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="p-3">
+    <!-- header -->
+    <div
+      class="background container-md my-3 px-5 py-3 rounded d-flex flex-direction-row justify-content-between align-items-center"
+    >
+      <!-- LOGO -->
+      <div>
+        <a href="#">
+          <img src="/img/logo.png" alt="logo" />
+        </a>
+      </div>
+    </div>
+
+    <!-- main -->
+
+    <div class="background container my-3 px-5 py-3 rounded">
+      <h4 class="fw-bold py-1">REGISTER YOUR BOOK</h4>
+
+      <div class="d-flex flex-direction-row justify-content-start">
+        <p class="">Book details</p>
+        <div class="border border-primary"></div>
+      </div>
+
+      <!-- FORM -->
+      <form>
+        <!-- Title -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="title" class="form-label">Title</label>
+          </div>
+          <div class="col-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              name="title"
+              placeholder="Your book title here. E.g. Harry Potter and The Fantastic Bootcamp"
+            />
+          </div>
+        </div>
+
+        <!-- Genre -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="genre" class="form-label">Genre</label>
+          </div>
+          <div class="col-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="genre"
+              name="genre"
+              placeholder="Your book genre here. E.g. Fantasy"
+            />
+          </div>
+        </div>
+
+        <!-- Author -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="author" class="form-label">Author</label>
+          </div>
+          <div class="col-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="author"
+              name="author"
+              placeholder="Your book author here. E.g. J. K. Rowling"
+            />
+          </div>
+        </div>
+
+        <!-- Publisher -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="publisher" class="form-label">Publisher</label>
+          </div>
+          <div class="col-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="publisher"
+              name="publisher"
+              placeholder="Publisher of the book. E.g. Pustaka Melang"
+            />
+          </div>
+        </div>
+
+        <!-- Year Published -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="year-published" class="form-label"
+              >Year Published</label
+            >
+          </div>
+          <div class="col-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="year-published"
+              name="year-published"
+              placeholder="1994"
+            />
+          </div>
+        </div>
+
+        <!-- Availability /Radio  -->
+
+        <div class="mb-3 row">
+          <div class="col-3 col-md-2">
+            <label for="Avaiability" class="form-label">Availability</label>
+          </div>
+          <div class="form-check col-3 col-md-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Online
+            </label>
+          </div>
+          <div class="form-check col-3 col-md-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              In Store
+            </label>
+          </div>
+
+          <div class="mb-3 form-check col-3">
+            <input
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Online & In Store</label
+            >
+          </div>
+        </div>
+
+        <!-- Pages -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="pages" class="form-label">Pages</label>
+          </div>
+          <div class="col-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="pages"
+              name="pages"
+              placeholder="514"
+            />
+          </div>
+        </div>
+
+        <!-- Language -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="language" class="form-label">Language</label>
+          </div>
+          <div class="col-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="language"
+              name="language"
+              placeholder="Language used in the book. E.g. English"
+            />
+          </div>
+        </div>
+
+        <!-- Name -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="name" class="form-label">Name</label>
+          </div>
+          <div class="col-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Your name. E.g. Lannah Yeon"
+            />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="email" class="form-label">Email</label>
+          </div>
+          <div class="col-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Your email. E.g. l.yeon@email.com"
+            />
+          </div>
+        </div>
+
+        <!-- checkbox -->
+        <div class="mb-3 form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label col col-md-8" for="flexCheckDefault">
+            I hereby agree to follow all rules and confirmed that all details
+            are accurate.
+          </label>
+        </div>
+
+        <!-- Button -->
+        <div class="mb-3 row">
+          <div class="col-12 col-md-8">
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary text-dark">
+                SAVE YOUR BOOK
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- footer -->
+  </body>
+</html>
