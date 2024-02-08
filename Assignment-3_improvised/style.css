@@ -11,7 +11,19 @@ body {
   background-color: #2a2c2e;
 }
 
+.background-2 {
+  background-color: #000000;
+}
+
 .btn-primary {
   --bs-btn-bg: #f4ce47;
   --bs-btn-border-color: #f4ce47;
+}
+
+.line {
+  border: 1px solid white;
+}
+
+.bot {
+  --bs-body-font-size: 0.75rem;
 }
