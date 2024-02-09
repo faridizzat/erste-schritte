@@ -24,12 +24,61 @@
 
   <body class="p-1">
     <!-- header -->
-    <div class="background container-md my-3 px-2 py-3 rounded-4">
-      <!-- LOGO -->
-      <div>
-        <a href="#">
-          <img src="/img/logo.png" alt="logo" />
-        </a>
+    <div class="background container-lg my-3 px-2 py-2 py-lg-4 rounded-4">
+      <div
+        class="row px-3 py-1 d-flex flex-direction-row justify-content-between align-items-center"
+      >
+        <!-- logo -->
+        <div class="col-12 col-lg-2">
+          <a class="d-flex flex-direction-row justify-content-center" href="#">
+            <img src="/img/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <!-- Nav -->
+        <div class="col-12 col-lg-6">
+          <nav class="nav row g-2">
+            <a class="nav-link nav text-center text-white col-lg-2" href="#"
+              >Books</a
+            >
+            <a class="nav-link nav text-center text-white col-lg-2" href="#"
+              >Authors</a
+            >
+            <a class="nav-link nav text-center text-white col-lg-3" href="#"
+              >What to Read?</a
+            >
+            <a class="nav-link nav text-center text-white col-lg-2" href="#"
+              >Register</a
+            >
+            <a class="nav-link nav text-center text-white col-lg-2" href="#"
+              >About Us</a
+            >
+          </nav>
+        </div>
+
+        <!-- Button + Icon -->
+        <div class="col-12 col-lg-3">
+          <!-- Icon -->
+          <div class="row">
+            <div
+              class="col-6 d-flex flex-direction-row justify-content-end p-2"
+            >
+              <a href="#"
+                ><img class="me-2" src="img/Search.png" alt="search"
+              /></a>
+              <a href="#"
+                ><img class="mx-2" src="img/bookmark.png" alt="bookmark"
+              /></a>
+              <a href="#"><img class="mx-2" src="img/Cart.png" alt="cart" /></a>
+            </div>
+            <!-- Button -->
+            <div class="col-6">
+              <button class="btn btn-primary text-black px-4 py-2">
+                LOGIN
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

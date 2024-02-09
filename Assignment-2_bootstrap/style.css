@@ -25,5 +25,10 @@ body {
 }
 
 .font-size-smaller {
-  font-size: 0.75rem;  
+  font-size: 0.75rem;
+}
+
+.nav {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0;
 }
