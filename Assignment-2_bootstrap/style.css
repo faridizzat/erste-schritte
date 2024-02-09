@@ -15,6 +15,14 @@ body {
   background-color: #000000;
 }
 
+.background-banner {
+  background-color: #f4ce47;
+}
+
+.font-yellow {
+  color: #f4ba30;
+}
+
 .btn-primary {
   --bs-btn-bg: #f4ce47;
   --bs-btn-border-color: #f4ce47;
