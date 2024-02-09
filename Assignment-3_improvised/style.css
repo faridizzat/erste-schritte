@@ -24,6 +24,6 @@ body {
   border: 1px solid white;
 }
 
-.bot {
-  --bs-body-font-size: 0.75rem;
+.font-size-smaller {
+  font-size: 0.75rem;  
 }
