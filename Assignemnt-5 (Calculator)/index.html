@@ -146,7 +146,13 @@
               />
             </div>
             <div class="col-md-3">
-              <input type="submit" name="" value="%" class="" />
+              <input
+                type="submit"
+                name=""
+                value="%"
+                class=""
+                onclick="clickOperation(this)"
+              />
             </div>
             <!-- second row -->
             <div class="col-md-3">
@@ -328,13 +334,9 @@
     //     bila tekan number button, current display akan reset, dan new value akan display and save as secondNumber
 
     let firstNumber = "";
-
     let secondNumber = "";
-
     let operator = "";
-
     let result = "";
-
     let display = document.getElementById("display");
 
     function clickNumber(element) {
@@ -397,9 +399,8 @@
 
           break;
 
-        case "&#8730;":
-          result = Math.sqrt(secondNumber);
-          console.log(result);
+        case "%":
+          result = (100 * parseInt(firstNumber)) / parseInt(secondNumber);
 
           break;
 
