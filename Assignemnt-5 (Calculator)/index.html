@@ -133,7 +133,7 @@
                 name=""
                 value="("
                 class=""
-                onclick="bracket(this)"
+                onclick="addBracket(this)"
               />
             </div>
             <div class="col-md-3">
@@ -142,7 +142,7 @@
                 name=""
                 value=")"
                 class=""
-                onclick="bracket(this)"
+                onclick="addBracket(this)"
               />
             </div>
             <div class="col-md-3">
@@ -160,7 +160,7 @@
                 type="submit"
                 name=""
                 value="7"
-                onclick="clickNumber(this)"
+                onclick="getNumber(this)"
               />
             </div>
             <div class="col-md-3">
@@ -169,7 +169,7 @@
                 name=""
                 value="8"
                 class=""
-                onclick="clickNumber(this)"
+                onclick="getNumber(this)"
               />
             </div>
             <div class="col-md-3">
@@ -178,7 +178,7 @@
                 name=""
                 value="9"
                 class=""
-                onclick="clickNumber(this)"
+                onclick="getNumber(this)"
               />
             </div>
             <div class="col-md-3">
@@ -197,7 +197,7 @@
                 name=""
                 value="4"
                 class=""
-                onclick="clickNumber(this)"
+                onclick="getNumber(this)"
               />
             </div>
             <div class="col-md-3">
@@ -206,7 +206,7 @@
                 name=""
                 value="5"
                 class=""
-                onclick="clickNumber(this)"
+                onclick="getNumber(this)"
               />
             </div>
             <div class="col-md-3">
@@ -215,7 +215,7 @@
                 name=""
                 value="6"
                 class=""
-                onclick="clickNumber(this)"
+                onclick="getNumber(this)"
               />
             </div>
             <div class="col-md-3">
@@ -234,7 +234,7 @@
                 name=""
                 value="1"
                 class=""
-                onclick="clickNumber(this)"
+                onclick="getNumber(this)"
               />
             </div>
             <div class="col-md-3">
@@ -243,7 +243,7 @@
                 name=""
                 value="2"
                 class=""
-                onclick="clickNumber(this)"
+                onclick="getNumber(this)"
               />
             </div>
             <div class="col-md-3">
@@ -252,7 +252,7 @@
                 name=""
                 value="3"
                 class=""
-                onclick="clickNumber(this)"
+                onclick="getNumber(this)"
               />
             </div>
             <div class="col-md-3">
@@ -277,7 +277,7 @@
                     name=""
                     value="0"
                     class=""
-                    onclick="clickNumber(this)"
+                    onclick="getNumber(this)"
                   />
                 </div>
                 <div class="col-md-4">
@@ -286,7 +286,7 @@
                     name=""
                     value="."
                     class=""
-                    onclick="clickNumber(this)"
+                    onclick="getNumber(this)"
                   />
                 </div>
                 <div class="col-md-4">
@@ -338,6 +338,9 @@
     let operator = "";
     let result = "";
     let display = document.getElementById("display");
+    
+    
+
 
     function clickNumber(element) {
       if (operator == "") {
@@ -355,7 +358,18 @@
         console.log("secondNumber after-", secondNumber);
       }
     }
-
+// bila tekan number selepas result displayed, new calculation akan triggered
+    
+        function getNumber(element) {
+      if (result == "") {
+        clickNumber(element)
+      } else {
+        allClear(element);
+        clickNumber(element);
+        
+      }
+    }
+    
     //     bila tekan operator, value akan save Operator
 
     function clickOperation(element) {
@@ -372,35 +386,59 @@
         display.value += secondNumber;
       }
     }
-
-    //     bila tekan equal button, firstNumber dan secondNumber will be added and show in display
-
+    
+    //bila tekan bracket, bracket akan displayed
+    
+    function addBracket (element) {
+      display.value += element.value;
+      
+    }
+    
+    //bila tekan equal button, firstNumber dan secondNumber will be added and show in display
+    //calculation start for in-bracket value
+    
     function submitButton(element) {
-      //   display.value = " ";
+      if (display.value.includes("(")) {
+        //function untuk bracketed value
+        console.log("ada bracket")
+        let newValue = parseFloat(display.value)
+        console.log(typeof newValue)
+             
+       
+        
+      } else {
+        calculate()
+      }
+    }
+    
 
+      //logic for math operation
+
+    function calculate(element) {
+      //   display.value = " ";
       switch (operator) {
         case "+":
-          result = parseInt(firstNumber) + parseInt(secondNumber);
+          result = parseFloat(firstNumber) + parseFloat(secondNumber);
 
           break;
 
         case "-":
-          result = parseInt(firstNumber) - parseInt(secondNumber);
+          result = parseFloat(firstNumber) - parseFloat(secondNumber);
 
           break;
 
         case "X":
-          result = parseInt(firstNumber) * parseInt(secondNumber);
+          result = parseFloat(firstNumber) * parseFloat(secondNumber);
 
           break;
 
         case "/":
-          result = parseInt(firstNumber) / parseInt(secondNumber);
+          result = parseFloat(firstNumber) / parseFloat(secondNumber);
 
           break;
 
         case "%":
-          result = (100 * parseInt(firstNumber)) / parseInt(secondNumber);
+          result = (100 * parseFloat(firstNumber)) / parseFloat(secondNumber);
 
           break;
 
